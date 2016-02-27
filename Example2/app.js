@@ -6,10 +6,10 @@ var main = function () {
 		var $new_comment;
 		
 		if ($(".comment-input input").val() !== "") {
-			$new_comment = $("<p>").text($(".comment-input input").val()); 
-			$(".comments").append($new_comment);
+			$new_comment = $("<p>").text($(".comment-input input").val()); //adds new jquery element p and assigns it value user entered in input field.
+			$(".comments").append($new_comment);  //appends new comment to comments element
+			$(".comment-input input").val(""); //clears out the input field text
 		} 
-		
 		
 		
 	});
